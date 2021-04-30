@@ -106,6 +106,7 @@ client.on('ready', () => {
        if(cmd==="link" && args.length==0){
           client.commands.get('link').execute(message, link);
        }
+       
 
        if(cmd==="setagenda"){
          if(args.length == 0) return message.channel.send(embed.setDescription('Provide agenda with the command'))
