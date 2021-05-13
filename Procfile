@@ -1,1 +1,1 @@
-worker: npm start
+webs: npm run dev
