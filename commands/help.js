@@ -116,13 +116,13 @@ module.exports = {
            },
 
            {
-            name: "**`contest`**",
+            name: "**`clist`**",
             value: 'I will show the list of upcoming CP contests ',
             inline: true
            }, 
 
            {
-            name: "**`contest <sitename>`**",
+            name: "**`clist <sitename>`**",
             value: 'I will show the Contest for particular site',
             inline: true
            }
