@@ -1,5 +1,5 @@
 
-const mycmd = ['agenda', 'clear', 'link', 'setlink', 'stop', 'spam', 'listen', 'joke', 'change', 'help', 'allow', 'tea', 'google'];
+const mycmd = ['agenda', 'clear', 'link', 'setlink', 'stop', 'spam', 'listen', 'joke', 'change', 'help', 'allow', 'tea', 'google', 'clist'];
 const Discord = require('discord.js');
 let embed = new Discord.MessageEmbed();
 
