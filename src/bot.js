@@ -14,6 +14,7 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`../commands/${file}`);
+ 
     client.commands.set(command.name, command);
 }
 
@@ -31,10 +32,12 @@ client.on('ready', () => {
 
  
  client.on('message', async (message)  => {
+
      const [cmd, ...args] = message.content
     .trim()
     .substring(pre.length)
     .split(/\s+/);
+
      if(message.content.startsWith(pre)){
       
        if(cmd==="spam"){
@@ -59,6 +62,7 @@ client.on('ready', () => {
 
 
        if(cmd==="listen"){
+       
         client.commands.get('listen').execute(message, args);
        }
 
@@ -99,9 +103,9 @@ client.on('ready', () => {
          client.commands.get('joke').execute(message);
        }
 
-       if(cmd=="contest"){
-         client.commands.get('contest').execute(message, args);
-       }
+       if(cmd=="clist"){
+        client.commands.get('clist').execute(message, args);
+      }
 
        if(cmd==="sps"){
          client.commands.get('sps').execute(message, args, client);
@@ -154,7 +158,6 @@ client.on('ready', () => {
         client.commands.get('spam').execute(message, tospam, tostop);
      }
 
-})
+ })
 
 client.login(process.env.DISCORDJS_BOT_TOKEN);
-
