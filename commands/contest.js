@@ -6,8 +6,6 @@ let fine = true;
 let {logos} = require('../util/cpLogos.json');
 
 let available = ["google", "codeforces", "codechef", "atcoder", "hackerearth", "hackerrank"];
-
-let cc = 0, cf = 0, at = 0, he = 0, hr = 0;
 let contests = [[]];
 for(i=0; i<6; i++) contests.push(new Array());
 //let google = []; codeforces = [], codechef =[] = [], atcoder = [], hackerearth = [], hackerrank = [], 
@@ -105,7 +103,7 @@ let print = (message, args) => {
 }
 
 module.exports = {
-    name: 'contest',
+    name: 'clist',
     description: 'fetches cp contest',
     async execute(message, args) {
         let getContest = async() => {
