@@ -5,19 +5,6 @@ const axios = require('axios');
 let embed = new Discord.MessageEmbed();
 let delAll = false;
 
-
-
-// function szz( sz ) {
-//   let st = new Set();
-//   for(i=0; i<sz.length; i++){
-//      st.add(sz[i]);
-//   }
-//   return st.size;
-// }
-
-
-  
-
 const fs = require('fs');
 const { finished } = require("stream");
 const { serialize } = require("v8");
@@ -27,7 +14,6 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`../commands/${file}`);
- 
     client.commands.set(command.name, command);
 }
 
@@ -45,17 +31,10 @@ client.on('ready', () => {
 
  
  client.on('message', async (message)  => {
-
-  //console.log(message.content)
-
      const [cmd, ...args] = message.content
     .trim()
     .substring(pre.length)
     .split(/\s+/);
-    
- //console.log(cmd);
- // console.log(args);
-
      if(message.content.startsWith(pre)){
       
        if(cmd==="spam"){
@@ -80,7 +59,6 @@ client.on('ready', () => {
 
 
        if(cmd==="listen"){
-       
         client.commands.get('listen').execute(message, args);
        }
 
@@ -119,6 +97,10 @@ client.on('ready', () => {
 
        if(cmd==="joke"){
          client.commands.get('joke').execute(message);
+       }
+
+       if(cmd=="contest"){
+         client.commands.get('contest').execute(message, args);
        }
 
        if(cmd==="sps"){
@@ -172,58 +154,7 @@ client.on('ready', () => {
         client.commands.get('spam').execute(message, tospam, tostop);
      }
 
-
- })
-
-
-
- 
+})
 
 client.login(process.env.DISCORDJS_BOT_TOKEN);
-
-
-
-
-
-
-
-//  client.on('message',(message) => {
-//    console.log(message.content);
-//      if(!message.author.bot){
-//        if(message.content.startsWith(PREFIX)){
-//            const [cmd_name, ...args] = message.content
-//            .trim()
-//            .substring(PREFIX.length)
-//            .split(/\s+/);
-//            console.log(args);
-
-//          if(cmd_name==='kick'){
-//              if(args.length===0) return message.reply('please provide an ID');
-//              const member = message.guild.members.cache.get(args[0]);
-//              message.channel.send('')
-//          }  
-//        }    
-//     }
-//  })
-
-
-
-
-
-      // for any text to stop spamming
-      // uncomment this, and comment upper stop
-    
-      // if(!(message.content===tospam)){
-      //   console.log('herreeeeeeeeeeeeeeeee');
-      //   tospam = message.content;
-      //   console.log(message.content);
-      //   message.channel.send('OK sorry , now stopped')
-      //   return;
-      // }
-
-
-
-
-
-
 
