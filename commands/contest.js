@@ -61,11 +61,13 @@ let get = (num) => {
 let printforme = (message, cc) => {
     let itsduration = get(cc.duration);
     var startTimeDate = new Date(cc.start_time);
+    var d2 = new Date ( startTimeDate );
+   // d2.setMinutes ( startTimeDate.getMinutes() + 30 );
     let urrl = logos[i];
     message.channel.send(embed.setTitle(`${cc.site}`).setDescription(`${cc.name}`).setColor('#17A6DE')
     .setThumbnail(`${urrl}`)
     .setURL(cc.url)
-    .setDescription(dateFormat(startTimeDate, "mmmm dS yyyy, h:MM TT"))
+    .setDescription(dateFormat(d2, `mmmm dS yyyy, h:MM TT`))
     .setTitle(cc.name)
     .setFooter(`${itsduration} HRS`)
     )
