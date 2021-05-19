@@ -73,7 +73,7 @@ let printforme = (message, cc) => {
 
 
 let render = (message) => {
-    for(i=0; i<6; i++) {
+    for(i=0; i<7; i++) {
         if(contests[i].length > 0) {
             for(j=0; j<Math.min(2, contests[i].length); j++) {
                printforme(message, contests[i][j]);
