@@ -7,9 +7,9 @@ const axios = require('axios');
 let fine = true;
 let {logos} = require('../util/cpLogos.json');
 
-let available = ["google", "codeforces", "codechef", "atcoder", "hackerearth", "hackerrank"];
+let available = ["google", "codeforces", "codechef", "atcoder", "hackerearth", "hackerrank", "leetcode"];
 let contests = [[]];
-for(i=0; i<6; i++) contests.push(new Array());
+for(i=0; i<7; i++) contests.push(new Array());
 //let google = []; codeforces = [], codechef =[] = [], atcoder = [], hackerearth = [], hackerrank = [], 
 //     0              1                2                 3                4                5
 
@@ -44,6 +44,10 @@ let fill = (contestData) => {
         if(contest.site === "HackerRank") {
             if(contest.duration <= mxDuration ) contests[5].push(contest);
         }
+        if(contest.site.toLowerCase() === "leetcode") {
+            contests[6].push(contest);
+        }
+
     });
 }
 
@@ -128,6 +132,6 @@ module.exports = {
         else {
             print(message, args);
         }
-        for(i=0; i<6; i++) contests[i] = new Array();
+        for(i=0; i<7; i++) contests[i] = new Array();
     }
 }
