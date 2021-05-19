@@ -7,4 +7,4 @@ It can fetch some useful articles from GOOGLE.
 It can delete messages in bulk.
 ** It can show you the list of upcoming competitive coding contests. 
 
-[Add bot to the server](#https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
+[Add bot to the server](https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
