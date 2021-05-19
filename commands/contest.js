@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 var dateFormat = require('dateformat');
 let embed = new Discord.MessageEmbed();
+let embed2 = new Discord.MessageEmbed();
+let embed3 = new Discord.MessageEmbed();
 const axios = require('axios');
 let fine = true;
 let {logos} = require('../util/cpLogos.json');
@@ -89,7 +91,7 @@ let print = (message, args) => {
         var ind = getIndex(name);
         if(ind!=-1) {
         if(contests[ind].length==0) {
-            message.channel.send(embed.setDescription(`No contests in near future for ` + args[0]));
+            message.channel.send(embed3.setDescription(`No contests in near future for ` + args[0]));
         }
         else {
             for(j = 0; j<Math.min(4, contests[i].length); j++) {
@@ -98,7 +100,7 @@ let print = (message, args) => {
         }
       }
       else {
-        message.channel.send(embed.setDescription(`Can't find site ` + name));
+        message.channel.send(embed2.setDescription(`Can't find site ` + name));
       }
 }
 
@@ -106,6 +108,7 @@ module.exports = {
     name: 'clist',
     description: 'fetches cp contest',
     async execute(message, args) {
+        console.log('hii');
         let getContest = async() => {
             let response = await axios.get('https://kontests.net/api/v1/all')
             .then()
