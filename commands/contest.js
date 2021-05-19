@@ -62,7 +62,7 @@ let printforme = (message, cc) => {
     let itsduration = get(cc.duration);
     var startTimeDate = new Date(cc.start_time);
     var d2 = new Date ( startTimeDate );
-   // d2.setMinutes ( startTimeDate.getMinutes() + 30 );
+    d2.setMinutes ( startTimeDate.getMinutes() + 330 );
     let urrl = logos[i];
     message.channel.send(embed.setTitle(`${cc.site}`).setDescription(`${cc.name}`).setColor('#17A6DE')
     .setThumbnail(`${urrl}`)
