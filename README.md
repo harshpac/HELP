@@ -23,4 +23,7 @@
 #### Set the link, then ask for it 
 <img src="https://user-images.githubusercontent.com/65284517/120176185-9e935900-c224-11eb-8944-9f6050ca550d.PNG" height=520px width = 820px/>
 
+#### Bot will guide you if you make errors
+<img src="https://user-images.githubusercontent.com/65284517/120176701-3a24c980-c225-11eb-9617-cd79ee77e922.PNG" height=520px width = 820px/>
+
 [Add bot to the server](https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
