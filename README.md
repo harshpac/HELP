@@ -1,4 +1,9 @@
-..*This is a simple helper bot. By adding this to your server, you can enhance your chat experience
+![Capture](https://user-images.githubusercontent.com/65284517/120172172-65f18080-c220-11eb-8c11-1741101cde2e.PNG)
+#HELP
+
+###Hey everyone, 
+
+*This is a simple helper bot. By adding this to your server, you can enhance your chat experience
 
 1. It spams message when asked, and stops when asked to stop.
 2. It can crack a joke.
