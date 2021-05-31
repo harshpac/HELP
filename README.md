@@ -1,5 +1,5 @@
 <img src="https://user-images.githubusercontent.com/65284517/120174411-b073fc80-c222-11eb-8faa-722c28c6433e.PNG" height=120px width = 120px/>
-# HELP
+<h1 align="left"># HELP</h1>
 
 ### Hey everyone, 
 
