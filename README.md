@@ -1,4 +1,4 @@
-![Capture](https://user-images.githubusercontent.com/65284517/120172172-65f18080-c220-11eb-8c11-1741101cde2e.PNG =250x250)
+![Capture](https://user-images.githubusercontent.com/65284517/120172172-65f18080-c220-11eb-8c11-1741101cde2e.PNG | width=50)
 # HELP
 
 ### Hey everyone, 
