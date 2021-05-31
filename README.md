@@ -6,7 +6,7 @@
 ### This is a simple helper bot. By adding this to your server, you can enhance your chat experience
 
 1. It spams message when asked, and stops when asked to stop.
-2. It can crack a joke.
+2. It can set the agenda and link for the chat.
 3. It can start a typing speed test among the users in the group.
 4. It can fetch some useful articles from GOOGLE.
 5. It can delete messages in bulk.
