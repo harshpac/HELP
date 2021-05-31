@@ -12,4 +12,8 @@
 5. It can delete messages in bulk.
 6. ***It can show you the list of upcoming competitive coding contests.*** 
 
+Here is how you can use -- 
+### Use -help for commands list
+<img src="https://user-images.githubusercontent.com/65284517/120174991-5889c580-c223-11eb-9ef2-762e212db2ec.PNG" height=420px width = 520px/>
+
 [Add bot to the server](https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
