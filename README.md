@@ -3,7 +3,7 @@
 
 ### Hey everyone, 
 
-*This is a simple helper bot. By adding this to your server, you can enhance your chat experience
+### This is a simple helper bot. By adding this to your server, you can enhance your chat experience
 
 1. It spams message when asked, and stops when asked to stop.
 2. It can crack a joke.
