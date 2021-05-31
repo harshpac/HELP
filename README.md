@@ -11,7 +11,7 @@
 4. It can fetch some useful articles from GOOGLE.
 5. It can delete messages in bulk.
 6. It can set a link for the chat.
-7. ***It can show you the list of upcoming competitive coding contests.*** 
+7. It can show you the list of upcoming competitive coding contests. 
 
 ## Here is how you can use -- 
 #### Use -help for commands list
