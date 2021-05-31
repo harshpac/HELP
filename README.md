@@ -10,10 +10,14 @@
 3. It can start a typing speed test among the users in the group.
 4. It can fetch some useful articles from GOOGLE.
 5. It can delete messages in bulk.
-6. ***It can show you the list of upcoming competitive coding contests.*** 
+6. It can set a link for the chat.
+7. ***It can show you the list of upcoming competitive coding contests.*** 
 
-Here is how you can use -- 
-### Use -help for commands list
+## Here is how you can use -- 
+#### Use -help for commands list
 <img src="https://user-images.githubusercontent.com/65284517/120174991-5889c580-c223-11eb-9ef2-762e212db2ec.PNG" height=620px width = 820px/>
+
+#### Here is how it spams message
+<img src="https://user-images.githubusercontent.com/65284517/120175589-039a7f00-c224-11eb-8755-cb976f9bce82.PNG" height=620px width = 820px/>
 
 [Add bot to the server](https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
