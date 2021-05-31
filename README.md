@@ -18,6 +18,6 @@
 <img src="https://user-images.githubusercontent.com/65284517/120174991-5889c580-c223-11eb-9ef2-762e212db2ec.PNG" height=620px width = 820px/>
 
 #### Here is how it spams message
-<img src="https://user-images.githubusercontent.com/65284517/120175589-039a7f00-c224-11eb-8755-cb976f9bce82.PNG" height=620px width = 820px/>
+<img src="https://user-images.githubusercontent.com/65284517/120175589-039a7f00-c224-11eb-8755-cb976f9bce82.PNG" height=520px width = 820px/>
 
 [Add bot to the server](https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
