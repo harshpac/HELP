@@ -13,6 +13,8 @@
 6. It can set a link for the chat.
 7. It can show you the list of upcoming competitive coding contests. 
 
+[Add bot to your server](https://discord.com/api/oauth2/authorize?client_id=812696302055850075&permissions=0&scope=bot)
+
 ## Here is how you can use -- 
 #### Use -help for commands list
 <img src="https://user-images.githubusercontent.com/65284517/120174991-5889c580-c223-11eb-9ef2-762e212db2ec.PNG" height=620px width = 820px/>
